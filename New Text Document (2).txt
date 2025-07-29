@@ -9,6 +9,11 @@ local TextButton = Instance.new("TextButton")
 local TextButton_2 = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
 local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
 
 --Properties:
 
@@ -26,10 +31,10 @@ TextButton.Parent = Frame
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.171402261, 0, 0.0603285767, 0)
+TextButton.Position = UDim2.new(0.106755793, 0, 0.0833170786, 0)
 TextButton.Size = UDim2.new(0, 125, 0, 50)
 TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Black Hole"
+TextButton.Text = "fire music 🔥"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 14.000
 
@@ -37,7 +42,7 @@ TextButton_2.Parent = Frame
 TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_2.BorderSizePixel = 0
-TextButton_2.Position = UDim2.new(0.171402261, 0, 0.403693408, 0)
+TextButton_2.Position = UDim2.new(0.106755793, 0, 0.403693408, 0)
 TextButton_2.Size = UDim2.new(0, 125, 0, 50)
 TextButton_2.Font = Enum.Font.SourceSans
 TextButton_2.Text = "infinite yeild"
@@ -65,37 +70,61 @@ TextButton_3.Text = "X"
 TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_3.TextSize = 14.000
 
+TextButton_4.Parent = Frame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0.106755793, 0, 0.700175345, 0)
+TextButton_4.Size = UDim2.new(0, 125, 0, 50)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = " peak music"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextSize = 14.000
+
+TextButton_5.Parent = Frame
+TextButton_5.BackgroundColor3 = Color3.fromRGB(102, 252, 255)
+TextButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.BorderSizePixel = 0
+TextButton_5.Position = UDim2.new(0.565341651, 0, 0.274887949, 0)
+TextButton_5.Size = UDim2.new(0, 204, 0, 161)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "CRASH THE GAME"
+TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.TextSize = 14.000
+
+UICorner.CornerRadius = UDim.new(20, 20)
+UICorner.Parent = TextButton_5
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.135353535, 0, -0.191570878, 0)
+TextBox.Size = UDim2.new(0, 361, 0, 50)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = "AFA UNITED"
+TextBox.TextColor3 = Color3.fromRGB(0, 255, 0)
+TextBox.TextSize = 60.000
+
+UICorner_2.CornerRadius = UDim.new(0, 12)
+UICorner_2.Parent = TextBox
+
 -- Scripts:
 
-local function ZCTKCZG_fake_script() -- TextButton.LocalScript 
+local function IZKTPXI_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local button = script.Parent
-	
 	button.MouseButton1Click:Connect(function()
-		local target = Instance.new("Part", workspace)
-		target.Anchored = true
-		target.CanCollide = false
-		target.Transparency = 1
-		target.Position = Vector3.new(0, 0, 0)
-	
-		local pull_1 = Instance.new("Attachment", target)
-	
-		for _, p in pairs(workspace:GetDescendants()) do
-			if p:IsA("Part") and not p.Anchored then
-				local pull_2 = Instance.new("Attachment", p)
-				local align = Instance.new("AlignPosition", p)
-	
-				align.Attachment0 = pull_1
-				align.Attachment1 = pull_2
-				align.MaxForce = math.huge
-				align.Responsiveness = 200 
-			end
-		end
+		local s = Instance.new("Sound", workspace.CurrentCamera)
+		s.SoundId = "rbxassetid://115458096987222"
+		s.Volume = 1
+		s.Looped = true
+		s:Play()
 	end)
 end
-coroutine.wrap(ZCTKCZG_fake_script)()
-local function DWKALT_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(IZKTPXI_fake_script)()
+local function VMHIAA_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local button = script.Parent
@@ -103,8 +132,8 @@ local function DWKALT_fake_script() -- TextButton_2.LocalScript
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(DWKALT_fake_script)()
-local function WTCDZ_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(VMHIAA_fake_script)()
+local function YGFJM_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -112,5 +141,59 @@ local function WTCDZ_fake_script() -- TextButton_3.LocalScript
 	end)
 	
 end
-coroutine.wrap(WTCDZ_fake_script)()
+coroutine.wrap(YGFJM_fake_script)()
+local function GMILGMN_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
 
+	local button = script.Parent
+	button.MouseButton1Click:Connect(function()
+		local s = Instance.new("Sound", workspace.CurrentCamera)
+		s.SoundId = "rbxassetid://82192647261888"
+		s.Volume = 1
+		s.Looped = true
+		s:Play()
+	end)
+end
+coroutine.wrap(GMILGMN_fake_script)()
+local function HUHWKX_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	local button = script.Parent
+	local FoxTail1 = game:GetService("ReplicatedStorage").Events1:WaitForChild("FoxTail1")
+	local AmericanCurlTail = game:GetService("ReplicatedStorage").Events2:WaitForChild("AmericanCurlTail")
+	local DeerMask1 = game:GetService("ReplicatedStorage").Events1:WaitForChild("DeerMask1")
+	local FennecTail = game:GetService("ReplicatedStorage").Events2:WaitForChild("FennecTail")
+	local MinkTail1 = game:GetService("ReplicatedStorage").Events1:WaitForChild("MinkTail1")
+	local OrientalTail = game:GetService("ReplicatedStorage").Events2:WaitForChild("OrientalTail")
+	local VampireBatTail = game:GetService("ReplicatedStorage").Events2:WaitForChild("VampireBatTail")
+	local VampireBatMask = game:GetService("ReplicatedStorage").Events2:WaitForChild("VampireBatMask")
+	local SilverFoxTail = game:GetService("ReplicatedStorage").Events1:WaitForChild("SilverFoxTail")
+	local SilverFoxMask = game:GetService("ReplicatedStorage").Events1:WaitForChild("SilverFoxMask")
+	local SeaBunnyTail = game:GetService("ReplicatedStorage").Events2:WaitForChild("SeaBunnyTail")
+	local CrowTail = game:GetService("ReplicatedStorage").Events2:WaitForChild("CrowTail")
+	local RaccoonTail1 = game:GetService("ReplicatedStorage").Events1:WaitForChild("RaccoonTail1")
+	local PossumTail = game:GetService("ReplicatedStorage").Events2:WaitForChild("PossumTail")
+	
+	
+	while true do
+		FoxTail1:FireServer("FoxTailTriggeredEveryHalfSecond")
+		AmericanCurlTail:FireServer("AmericanCurlTailTriggeredEveryHalfSecond")
+		DeerMask1:FireServer("DeerMask1TriggeredEveryHalfSecond")
+		FennecTail:FireServer("FennecTailTriggeredEveryHalfSecond")
+		MinkTail1:FireServer("MinkTail1TriggeredEveryHalfSecond")
+		OrientalTail:FireServer("OrientalTailTriggeredEveryHalfSecond")
+		VampireBatTail:FireServer("VampireBatTailTriggeredEveryHalfSecond")
+		VampireBatMask:FireServer("VampireBatMaskTriggeredEveryHalfSecond")
+		SilverFoxTail:FireServer("SilverFoxTailTriggeredEveryHalfSecond")
+		SilverFoxMask:FireServer("SilverFoxMaskTriggeredEveryHalfSecond")
+		SeaBunnyTail:FireServer("SeaBunnyTailTriggeredEveryHalfSecond")
+		CrowTail:FireServer("CrowTailTriggeredEveryHalfSecond")
+		RaccoonTail1:FireServer("RaccoonTail1TriggeredEveryHalfSecond")
+		PossumTail:FireServer("PossumTailTriggeredEveryHalfSecond")
+		task.wait(0.1)
+	end
+	
+	
+	end)
+end
+coroutine.wrap(HUHWKX_fake_script)()
