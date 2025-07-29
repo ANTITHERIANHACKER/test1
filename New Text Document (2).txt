@@ -149,7 +149,7 @@ local function GMILGMN_fake_script() -- TextButton_4.LocalScript
 	button.MouseButton1Click:Connect(function()
 		local s = Instance.new("Sound", workspace.CurrentCamera)
 		s.SoundId = "rbxassetid://82192647261888"
-		s.Volume = 1
+		s.Volume = 10
 		s.Looped = true
 		s:Play()
 	end)
