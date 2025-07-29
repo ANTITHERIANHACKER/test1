@@ -106,12 +106,11 @@ TextBox.Text = "AFA UNITED"
 TextBox.TextColor3 = Color3.fromRGB(0, 255, 0)
 TextBox.TextSize = 60.000
 
-UICorner_2.CornerRadius = UDim.new(0, 12)
 UICorner_2.Parent = TextBox
 
 -- Scripts:
 
-local function IZKTPXI_fake_script() -- TextButton.LocalScript 
+local function JKBA_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local button = script.Parent
@@ -123,8 +122,8 @@ local function IZKTPXI_fake_script() -- TextButton.LocalScript
 		s:Play()
 	end)
 end
-coroutine.wrap(IZKTPXI_fake_script)()
-local function VMHIAA_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(JKBA_fake_script)()
+local function BUWSSRX_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local button = script.Parent
@@ -132,8 +131,8 @@ local function VMHIAA_fake_script() -- TextButton_2.LocalScript
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(VMHIAA_fake_script)()
-local function YGFJM_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(BUWSSRX_fake_script)()
+local function IMAPP_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -141,57 +140,57 @@ local function YGFJM_fake_script() -- TextButton_3.LocalScript
 	end)
 	
 end
-coroutine.wrap(YGFJM_fake_script)()
-local function GMILGMN_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(IMAPP_fake_script)()
+local function BXLFD_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	local button = script.Parent
 	button.MouseButton1Click:Connect(function()
 		local s = Instance.new("Sound", workspace.CurrentCamera)
 		s.SoundId = "rbxassetid://82192647261888"
-		s.Volume = 10
+		s.Volume = 1
 		s.Looped = true
 		s:Play()
 	end)
 end
-coroutine.wrap(GMILGMN_fake_script)()
-local function HUHWKX_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(BXLFD_fake_script)()
+local function DHUSPQ_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	local button = script.Parent
-	local FoxTail1 = game:GetService("ReplicatedStorage").Events1:WaitForChild("FoxTail1")
-	local AmericanCurlTail = game:GetService("ReplicatedStorage").Events2:WaitForChild("AmericanCurlTail")
-	local DeerMask1 = game:GetService("ReplicatedStorage").Events1:WaitForChild("DeerMask1")
-	local FennecTail = game:GetService("ReplicatedStorage").Events2:WaitForChild("FennecTail")
-	local MinkTail1 = game:GetService("ReplicatedStorage").Events1:WaitForChild("MinkTail1")
-	local OrientalTail = game:GetService("ReplicatedStorage").Events2:WaitForChild("OrientalTail")
-	local VampireBatTail = game:GetService("ReplicatedStorage").Events2:WaitForChild("VampireBatTail")
-	local VampireBatMask = game:GetService("ReplicatedStorage").Events2:WaitForChild("VampireBatMask")
-	local SilverFoxTail = game:GetService("ReplicatedStorage").Events1:WaitForChild("SilverFoxTail")
-	local SilverFoxMask = game:GetService("ReplicatedStorage").Events1:WaitForChild("SilverFoxMask")
-	local SeaBunnyTail = game:GetService("ReplicatedStorage").Events2:WaitForChild("SeaBunnyTail")
-	local CrowTail = game:GetService("ReplicatedStorage").Events2:WaitForChild("CrowTail")
-	local RaccoonTail1 = game:GetService("ReplicatedStorage").Events1:WaitForChild("RaccoonTail1")
-	local PossumTail = game:GetService("ReplicatedStorage").Events2:WaitForChild("PossumTail")
+		local FoxTail1 = game:GetService("ReplicatedStorage").Events1:WaitForChild("FoxTail1")
+		local AmericanCurlTail = game:GetService("ReplicatedStorage").Events2:WaitForChild("AmericanCurlTail")
+		local DeerMask1 = game:GetService("ReplicatedStorage").Events1:WaitForChild("DeerMask1")
+		local FennecTail = game:GetService("ReplicatedStorage").Events2:WaitForChild("FennecTail")
+		local MinkTail1 = game:GetService("ReplicatedStorage").Events1:WaitForChild("MinkTail1")
+		local OrientalTail = game:GetService("ReplicatedStorage").Events2:WaitForChild("OrientalTail")
+		local VampireBatTail = game:GetService("ReplicatedStorage").Events2:WaitForChild("VampireBatTail")
+		local VampireBatMask = game:GetService("ReplicatedStorage").Events2:WaitForChild("VampireBatMask")
+		local SilverFoxTail = game:GetService("ReplicatedStorage").Events1:WaitForChild("SilverFoxTail")
+		local SilverFoxMask = game:GetService("ReplicatedStorage").Events1:WaitForChild("SilverFoxMask")
+		local SeaBunnyTail = game:GetService("ReplicatedStorage").Events2:WaitForChild("SeaBunnyTail")
+		local CrowTail = game:GetService("ReplicatedStorage").Events2:WaitForChild("CrowTail")
+		local RaccoonTail1 = game:GetService("ReplicatedStorage").Events1:WaitForChild("RaccoonTail1")
+		local PossumTail = game:GetService("ReplicatedStorage").Events2:WaitForChild("PossumTail")
 	
 	
-	while true do
-		FoxTail1:FireServer("FoxTailTriggeredEveryHalfSecond")
-		AmericanCurlTail:FireServer("AmericanCurlTailTriggeredEveryHalfSecond")
-		DeerMask1:FireServer("DeerMask1TriggeredEveryHalfSecond")
-		FennecTail:FireServer("FennecTailTriggeredEveryHalfSecond")
-		MinkTail1:FireServer("MinkTail1TriggeredEveryHalfSecond")
-		OrientalTail:FireServer("OrientalTailTriggeredEveryHalfSecond")
-		VampireBatTail:FireServer("VampireBatTailTriggeredEveryHalfSecond")
-		VampireBatMask:FireServer("VampireBatMaskTriggeredEveryHalfSecond")
-		SilverFoxTail:FireServer("SilverFoxTailTriggeredEveryHalfSecond")
-		SilverFoxMask:FireServer("SilverFoxMaskTriggeredEveryHalfSecond")
-		SeaBunnyTail:FireServer("SeaBunnyTailTriggeredEveryHalfSecond")
-		CrowTail:FireServer("CrowTailTriggeredEveryHalfSecond")
-		RaccoonTail1:FireServer("RaccoonTail1TriggeredEveryHalfSecond")
-		PossumTail:FireServer("PossumTailTriggeredEveryHalfSecond")
-		task.wait(0.1)
-	end
+		while true do
+			FoxTail1:FireServer("FoxTailTriggeredEveryHalfSecond")
+			AmericanCurlTail:FireServer("AmericanCurlTailTriggeredEveryHalfSecond")
+			DeerMask1:FireServer("DeerMask1TriggeredEveryHalfSecond")
+			FennecTail:FireServer("FennecTailTriggeredEveryHalfSecond")
+			MinkTail1:FireServer("MinkTail1TriggeredEveryHalfSecond")
+			OrientalTail:FireServer("OrientalTailTriggeredEveryHalfSecond")
+			VampireBatTail:FireServer("VampireBatTailTriggeredEveryHalfSecond")
+			VampireBatMask:FireServer("VampireBatMaskTriggeredEveryHalfSecond")
+			SilverFoxTail:FireServer("SilverFoxTailTriggeredEveryHalfSecond")
+			SilverFoxMask:FireServer("SilverFoxMaskTriggeredEveryHalfSecond")
+			SeaBunnyTail:FireServer("SeaBunnyTailTriggeredEveryHalfSecond")
+			CrowTail:FireServer("CrowTailTriggeredEveryHalfSecond")
+			RaccoonTail1:FireServer("RaccoonTail1TriggeredEveryHalfSecond")
+			PossumTail:FireServer("PossumTailTriggeredEveryHalfSecond")
+			task.wait(0.1)
+		end
 	
 	
 	end)
