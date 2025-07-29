@@ -196,4 +196,4 @@ local function HUHWKX_fake_script() -- TextButton_5.LocalScript
 	
 	end)
 end
-coroutine.wrap(HUHWKX_fake_script)()
+
